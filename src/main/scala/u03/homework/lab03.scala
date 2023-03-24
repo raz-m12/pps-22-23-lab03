@@ -54,9 +54,7 @@ object Part1MoreOnLists:
   import u02.Modules.Person.*
   import u02.Modules.Person
 
-  import math.Fractional.Implicits.infixFractionalOps
-  import math.Integral.Implicits.infixIntegralOps
-  import math.Numeric.Implicits.infixNumericOps
+
   def getCourses(l: List[Person]): List[String] =
     flatMap(l) { case Teacher(_, course) => Cons(course, Nil()); case _ => Nil() }
 
