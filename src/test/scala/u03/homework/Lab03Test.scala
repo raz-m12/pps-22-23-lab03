@@ -95,6 +95,8 @@ case object Part1ListTests:
     @Test
     def mapNil() =
       assertEquals(expectedNil, map(Nil())(el => Nil[Int]()))
+
+
 class Part2MoreListTests:
   import u02.Modules.Person.*
   import u02.Modules.Person
